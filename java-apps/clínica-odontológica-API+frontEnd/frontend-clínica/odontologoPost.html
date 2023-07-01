@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./odontologosPost/odontologoPost.css">
+    <script src="./odontologosPost/odontologoPost.js"></script>
+    <script src="./utils/utils.js"></script>
+    <title>Alta odontologo</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <div class="navi">
+                <h2 class="logo"><img src="/img/pngwing.com.png" alt="Logo">Clínica Odontológica</h2>
+                <nav class="navigation">
+                    <a href="./listarTodos.html" class="btnListar">Listar</a>
+                </nav>
+            </div>
+        </header>
+
+        <form action="submit" class="registrarForm">
+            
+            <div class="title">
+                <h2>Agregar odontólogo</h2>
+            </div>
+
+            <label for="nombre" class="form__label">Nombre:</label>
+            <input type="text" class="nombreInput" name="nombre" placeholder="Ingrese el nombre" required>
+            <span></span>
+
+            <label for="apellido" class="form__label">Apellido:</label>
+            <input type="text" class="apellidoInput" name="apellido" placeholder="Ingrese el apellido" required>
+            <span></span>
+
+            <label class="form__label" for="matricula">Matrícula:</label>
+            <input type="text" class="matriculaInput" name="matricula" placeholder="Ingrese la matrícula. (Ejemplo: FG-87653)" required>
+            <span></span>
+
+            <button type="submit" class="registrar">Registrar</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

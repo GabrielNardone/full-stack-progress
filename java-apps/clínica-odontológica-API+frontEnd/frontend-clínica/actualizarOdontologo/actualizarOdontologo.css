@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', Verdana, sans-serif;
+}
+
+body {
+    background: url(/img/bkgrnd.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header .navi {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    padding-left: 5px;
+    color: antiquewhite;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: 1vw;
+}
+
+.logo img {
+    width: 30px;
+}
+
+.navigation a {
+    position: relative;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation .btnListar {
+    padding: 10px;
+    background: transparent;
+    border: 2px solid antiquewhite;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: antiquewhite;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: all .5s ease;
+}
+
+.btnlogin:hover {
+    background: #2756c296;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: antiquewhite;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formBuscar {
+    width: 50%;
+    min-width: 300px;
+    background: rgb(0, 0, 0, 0.491);
+    padding: 20px;
+    color: antiquewhite;
+}
+
+.formActualizar {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    min-width: 300px;
+    background: rgb(0, 0, 0, 0.491);
+    margin-top: 15px;
+    padding: 20px;
+    color: antiquewhite;
+}
+
+.formSubmit {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    background: rgb(0, 0, 0, 0.491);
+    margin-top: 15px;
+    padding: 20px;
+    color: antiquewhite;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 16px;
+    font-weight: 500;
+}
+
+.nombreInput,
+.apellidoInput,
+.matriculaInput,
+.idInput,
+.idForm {
+    width: 100%;
+    height: 45px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: antiquewhite;
+}
+
+
+.form__label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-bottom: 5px;
+}
+
+.actualizar {
+    width: 100%;
+    height: 50px;
+    background-color: #2755c2;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px 0 20px 0;
+    cursor: pointer;
+    transition: all .5s ease;
+    border-radius: 6px;
+}
+
+.registrar:hover {
+    background: #2756c296;
+}
+
+.errorMensaje {
+    color: #D8000C;
+    background-color: rgba(216, 0, 12, .2);
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.exitoMensaje {
+    width: 100%;
+    height: 50px;
+    color: #38E54D;
+    background-color: rgba(56, 229, 77, .3);
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 6px
+}

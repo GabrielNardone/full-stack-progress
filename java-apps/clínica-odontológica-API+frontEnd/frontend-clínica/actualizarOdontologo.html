@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./actualizarOdontologo/actualizarOdontologo.css">
+    <script src="./actualizarOdontologo/actualizarOdontologo.js"></script>
+    <script src="./utils/utils.js"></script>
+    <title>Actualizar odontologo</title>
+</head>
+
+<body>
+
+    <div class="containter">
+
+        <header class="header">
+            <div class="navi">
+                <h2 class="logo"><img src="/img/pngwing.com.png" alt="Logo">Clínica Odontológica</h2>
+                <nav class="navigation">
+                    <a href="./listarTodos.html" class="btnListar">Listar</a>
+                </nav>
+            </div>
+        </header>
+
+        <section>
+            <div class="formBuscar">
+
+                <div class="title">
+                    <h2>Recuperar datos del odontólogo</h2>
+                </div>
+                <form action="submit" class="idSearchForm">
+                    <label for="id" class="form__label">Ingrese el id:</label>
+                    <input type="number" class="idInput" name="id" placeholder="Ingrese el id" required>
+                    <span></span>
+                </form>
+
+            </div>
+
+            <div class="formActualizar">
+
+                <div class="title">
+                    <h2>Modificá los datos necesarios</h2>
+                </div>
+
+                <form action="submit" class="formSubmit">
+
+                    <label for="id" class="form__label">Id:</label>
+                    <input type="text" class="idForm" name="id" placeholder="Ingrese el id" required>
+                    <span></span>
+
+                    <label for="nombre" class="form__label">Nombre:</label>
+                    <input type="text" class="nombreInput" name="nombre" placeholder="Ingrese el nombre" required>
+                    <span></span>
+
+                    <label for="apellido" class="form__label">Apellido:</label>
+                    <input type="text" class="apellidoInput" name="apellido" placeholder="Ingrese el apellido" required>
+                    <span></span>
+
+                    <label class="form__label" for="matricula">Matrícula:</label>
+                    <input type="text" class="matriculaInput" name="matricula" placeholder="Ingrese la matrícula. (Ejemplo: HJ-457678)" required>
+                    <span></span>
+                    
+                    <button type="submit" class="actualizar">Actualizar</button>
+                </form>
+
+            </div>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
