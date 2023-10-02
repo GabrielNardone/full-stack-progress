@@ -1,0 +1,1 @@
+https://journal-app-gfn.netlify.app
